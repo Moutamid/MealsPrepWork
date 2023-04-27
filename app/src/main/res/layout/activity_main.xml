@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/add"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12sp"
+        android:textSize="18sp"
+        android:padding="12sp"
+        android:text="Add Meals" />
+
+    <Button
+        android:id="@+id/save"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12sp"
+        android:textSize="18sp"
+        android:padding="12sp"
+        android:text="Save Meals" />
+
+    <Button
+        android:id="@+id/local_search"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12sp"
+        android:textSize="18sp"
+        android:padding="12sp"
+        android:text="Search for Meals By Ingredient " />
+
+    <Button
+        android:id="@+id/api_search"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12sp"
+        android:textSize="18sp"
+        android:padding="12sp"
+        android:text="Search for Meals" />
+
+</LinearLayout>
