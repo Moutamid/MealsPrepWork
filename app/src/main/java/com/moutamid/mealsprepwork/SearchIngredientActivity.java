@@ -45,7 +45,7 @@ public class SearchIngredientActivity extends AppCompatActivity {
                 Toast.makeText(this, "Please add meal name or ingredient", Toast.LENGTH_SHORT).show();
             } else {
                 list = database.mealDAO().getAll();
-                adapter = new SavedAdapter(SearchIngredientActivity.this, list, list);
+                adapter = new SavedAdapter(SearchIngredientActivity.this, list, list, true);
                 adapter.getFilter().filter(binding.edt.getText().toString());
                 binding.recyclerView.setAdapter(adapter);
             }

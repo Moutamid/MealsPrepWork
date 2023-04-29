@@ -41,7 +41,7 @@ public class SavedActivity extends AppCompatActivity {
 
         list = new ArrayList<>();
         list = database.mealDAO().getAll();
-        adapter = new SavedAdapter(SavedActivity.this, list);
+        adapter = new SavedAdapter(SavedActivity.this, list, true);
         binding.recyclerView.setAdapter(adapter);
 
   /*      if (savedInstanceState != null) {

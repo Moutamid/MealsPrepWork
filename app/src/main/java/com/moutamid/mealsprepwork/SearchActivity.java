@@ -89,7 +89,7 @@ public class SearchActivity extends AppCompatActivity {
                             list.add(model);
                         }
 
-                        adapter = new SavedAdapter(SearchActivity.this, list);
+                        adapter = new SavedAdapter(SearchActivity.this, list, false);
                         binding.recyclerView.setAdapter(adapter);
                         progressDialog.dismiss();
                     } catch (JSONException e) {

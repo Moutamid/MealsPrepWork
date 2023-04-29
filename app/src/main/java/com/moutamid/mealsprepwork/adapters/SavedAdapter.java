@@ -1,9 +1,15 @@
 package com.moutamid.mealsprepwork.adapters;
 
+import android.app.Dialog;
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.Button;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
@@ -24,16 +30,19 @@ import java.util.List;
 public class SavedAdapter extends RecyclerView.Adapter<SavedAdapter.SavedVH> implements Filterable {
     Context context;
     List<MealModel> list, listAll;
+    boolean added;
 
-    public SavedAdapter(Context context, List<MealModel> list) {
+    public SavedAdapter(Context context, List<MealModel> list, boolean added) {
         this.context = context;
         this.list = list;
+        this.added = added;
     }
 
-    public SavedAdapter(Context context, List<MealModel> list, List<MealModel> listAll) {
+    public SavedAdapter(Context context, List<MealModel> list, List<MealModel> listAll, boolean added) {
         this.context = context;
         this.list = list;
         this.listAll = listAll;
+        this.added = added;
     }
 
     @NonNull
@@ -50,6 +59,51 @@ public class SavedAdapter extends RecyclerView.Adapter<SavedAdapter.SavedVH> imp
         holder.textView.setText(model.getMeal());
         Glide.with(context).load(model.getMealThumb()).into(holder.image);
 
+        if (added) {
+            holder.itemView.setOnClickListener(v -> showDialog(model));
+        }
+
+    }
+
+    private void showDialog(MealModel model) {
+        final Dialog dialog = new Dialog(context);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.ingredients);
+
+        String text = "1- ";
+
+        TextView textView = dialog.findViewById(R.id.ingredients);
+        Button button = dialog.findViewById(R.id.close);
+
+        if (!model.getIngredient1().isEmpty())
+            text = text + model.getIngredient1();
+        if (!model.getIngredient2().isEmpty() )
+            text = text + "\n2- " + model.getIngredient2();
+        if (!model.getIngredient3().isEmpty() )
+            text = text + "\n3- " + model.getIngredient3();
+        if (!model.getIngredient4().isEmpty() )
+            text = text + "\n4- " + model.getIngredient4();
+        if (!model.getIngredient5().isEmpty() )
+            text = text + "\n5- " + model.getIngredient5();
+        if (!model.getIngredient6().isEmpty() )
+            text = text + "\n6- " + model.getIngredient6();
+        if (!model.getIngredient7().isEmpty() )
+            text = text + "\n7- " + model.getIngredient7();
+        if (!model.getIngredient8().isEmpty() )
+            text = text + "\n8- " + model.getIngredient8();
+        if (!model.getIngredient9().isEmpty() )
+            text = text + "\n9- " + model.getIngredient9();
+        if (!model.getIngredient10().isEmpty() )
+            text = text + "\n10- " + model.getIngredient10();
+
+        textView.setText(text);
+
+        button.setOnClickListener(v -> dialog.dismiss());
+
+        dialog.show();
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.getWindow().setGravity(Gravity.CENTER);
     }
 
     @Override
