@@ -71,6 +71,36 @@ public class MealModel implements Parcelable {
     @ColumnInfo(name = "Ingredient10")
     String Ingredient10 = "";
 
+    @ColumnInfo(name = "Ingredient11")
+    String Ingredient11 = "";
+
+    @ColumnInfo(name = "Ingredient12")
+    String Ingredient12 = "";
+
+    @ColumnInfo(name = "Ingredient13")
+    String Ingredient13 = "";
+
+    @ColumnInfo(name = "Ingredient14")
+    String Ingredient14 = "";
+
+    @ColumnInfo(name = "Ingredient15")
+    String Ingredient15 = "";
+
+    @ColumnInfo(name = "Ingredient16")
+    String Ingredient16 = "";
+
+    @ColumnInfo(name = "Ingredient17")
+    String Ingredient17 = "";
+
+    @ColumnInfo(name = "Ingredient18")
+    String Ingredient18 = "";
+
+    @ColumnInfo(name = "Ingredient19")
+    String Ingredient19 = "";
+
+    @ColumnInfo(name = "Ingredient20")
+    String Ingredient20 = "";
+
     @ColumnInfo(name = "Measure1")
     String Measure1 = "";
 
@@ -101,6 +131,36 @@ public class MealModel implements Parcelable {
     @ColumnInfo(name = "Measure10")
     String Measure10 = "";
 
+    @ColumnInfo(name = "Measure11")
+    String Measure11 = "";
+
+    @ColumnInfo(name = "Measure12")
+    String Measure12 = "";
+
+    @ColumnInfo(name = "Measure13")
+    String Measure13 = "";
+
+    @ColumnInfo(name = "Measure14")
+    String Measure14 = "";
+
+    @ColumnInfo(name = "Measure15")
+    String Measure15 = "";
+
+    @ColumnInfo(name = "Measure16")
+    String Measure16 = "";
+
+    @ColumnInfo(name = "Measure17")
+    String Measure17 = "";
+
+    @ColumnInfo(name = "Measure18")
+    String Measure18 = "";
+
+    @ColumnInfo(name = "Measure19")
+    String Measure19 = "";
+
+    @ColumnInfo(name = "Measure20")
+    String Measure20 = "";
+
     @ColumnInfo(name = "Source")
     String Source = "";
 
@@ -116,7 +176,7 @@ public class MealModel implements Parcelable {
     public MealModel() {
     }
 
-    public MealModel(String meal, String drinkAlternate, String category, String area, String instructions, String mealThumb, String tags, String youtube, String ingredient1, String ingredient2, String ingredient3, String ingredient4, String ingredient5, String ingredient6, String ingredient7, String ingredient8, String ingredient9, String ingredient10, String measure1, String measure2, String measure3, String measure4, String measure5, String measure6, String measure7, String measure8, String measure9, String measure10, String source, String imageSource, String creativeCommonsConfirmed, String dateModified) {
+    public MealModel(String meal, String drinkAlternate, String category, String area, String instructions, String mealThumb, String tags, String youtube, String ingredient1, String ingredient2, String ingredient3, String ingredient4, String ingredient5, String ingredient6, String ingredient7, String ingredient8, String ingredient9, String ingredient10, String ingredient11, String ingredient12, String ingredient13, String ingredient14, String ingredient15, String ingredient16, String ingredient17, String ingredient18, String ingredient19, String ingredient20, String measure1, String measure2, String measure3, String measure4, String measure5, String measure6, String measure7, String measure8, String measure9, String measure10, String measure11, String measure12, String measure13, String measure14, String measure15, String measure16, String measure17, String measure18, String measure19, String measure20, String source, String imageSource, String creativeCommonsConfirmed, String dateModified) {
         Meal = meal;
         DrinkAlternate = drinkAlternate;
         Category = category;
@@ -135,6 +195,16 @@ public class MealModel implements Parcelable {
         Ingredient8 = ingredient8;
         Ingredient9 = ingredient9;
         Ingredient10 = ingredient10;
+        Ingredient11 = ingredient11;
+        Ingredient12 = ingredient12;
+        Ingredient13 = ingredient13;
+        Ingredient14 = ingredient14;
+        Ingredient15 = ingredient15;
+        Ingredient16 = ingredient16;
+        Ingredient17 = ingredient17;
+        Ingredient18 = ingredient18;
+        Ingredient19 = ingredient19;
+        Ingredient20 = ingredient20;
         Measure1 = measure1;
         Measure2 = measure2;
         Measure3 = measure3;
@@ -145,6 +215,16 @@ public class MealModel implements Parcelable {
         Measure8 = measure8;
         Measure9 = measure9;
         Measure10 = measure10;
+        Measure11 = measure11;
+        Measure12 = measure12;
+        Measure13 = measure13;
+        Measure14 = measure14;
+        Measure15 = measure15;
+        Measure16 = measure16;
+        Measure17 = measure17;
+        Measure18 = measure18;
+        Measure19 = measure19;
+        Measure20 = measure20;
         Source = source;
         ImageSource = imageSource;
         CreativeCommonsConfirmed = creativeCommonsConfirmed;
@@ -413,6 +493,166 @@ public class MealModel implements Parcelable {
 
     public void setDateModified(String dateModified) {
         this.dateModified = dateModified;
+    }
+
+    public String getIngredient11() {
+        return Ingredient11;
+    }
+
+    public void setIngredient11(String ingredient11) {
+        Ingredient11 = ingredient11;
+    }
+
+    public String getIngredient12() {
+        return Ingredient12;
+    }
+
+    public void setIngredient12(String ingredient12) {
+        Ingredient12 = ingredient12;
+    }
+
+    public String getIngredient13() {
+        return Ingredient13;
+    }
+
+    public void setIngredient13(String ingredient13) {
+        Ingredient13 = ingredient13;
+    }
+
+    public String getIngredient14() {
+        return Ingredient14;
+    }
+
+    public void setIngredient14(String ingredient14) {
+        Ingredient14 = ingredient14;
+    }
+
+    public String getIngredient15() {
+        return Ingredient15;
+    }
+
+    public void setIngredient15(String ingredient15) {
+        Ingredient15 = ingredient15;
+    }
+
+    public String getIngredient16() {
+        return Ingredient16;
+    }
+
+    public void setIngredient16(String ingredient16) {
+        Ingredient16 = ingredient16;
+    }
+
+    public String getIngredient17() {
+        return Ingredient17;
+    }
+
+    public void setIngredient17(String ingredient17) {
+        Ingredient17 = ingredient17;
+    }
+
+    public String getIngredient18() {
+        return Ingredient18;
+    }
+
+    public void setIngredient18(String ingredient18) {
+        Ingredient18 = ingredient18;
+    }
+
+    public String getIngredient19() {
+        return Ingredient19;
+    }
+
+    public void setIngredient19(String ingredient19) {
+        Ingredient19 = ingredient19;
+    }
+
+    public String getIngredient20() {
+        return Ingredient20;
+    }
+
+    public void setIngredient20(String ingredient20) {
+        Ingredient20 = ingredient20;
+    }
+
+    public String getMeasure11() {
+        return Measure11;
+    }
+
+    public void setMeasure11(String measure11) {
+        Measure11 = measure11;
+    }
+
+    public String getMeasure12() {
+        return Measure12;
+    }
+
+    public void setMeasure12(String measure12) {
+        Measure12 = measure12;
+    }
+
+    public String getMeasure13() {
+        return Measure13;
+    }
+
+    public void setMeasure13(String measure13) {
+        Measure13 = measure13;
+    }
+
+    public String getMeasure14() {
+        return Measure14;
+    }
+
+    public void setMeasure14(String measure14) {
+        Measure14 = measure14;
+    }
+
+    public String getMeasure15() {
+        return Measure15;
+    }
+
+    public void setMeasure15(String measure15) {
+        Measure15 = measure15;
+    }
+
+    public String getMeasure16() {
+        return Measure16;
+    }
+
+    public void setMeasure16(String measure16) {
+        Measure16 = measure16;
+    }
+
+    public String getMeasure17() {
+        return Measure17;
+    }
+
+    public void setMeasure17(String measure17) {
+        Measure17 = measure17;
+    }
+
+    public String getMeasure18() {
+        return Measure18;
+    }
+
+    public void setMeasure18(String measure18) {
+        Measure18 = measure18;
+    }
+
+    public String getMeasure19() {
+        return Measure19;
+    }
+
+    public void setMeasure19(String measure19) {
+        Measure19 = measure19;
+    }
+
+    public String getMeasure20() {
+        return Measure20;
+    }
+
+    public void setMeasure20(String measure20) {
+        Measure20 = measure20;
     }
 
     @Override

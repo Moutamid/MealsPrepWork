@@ -59,9 +59,16 @@ public class SavedAdapter extends RecyclerView.Adapter<SavedAdapter.SavedVH> imp
         holder.textView.setText(model.getMeal());
         Glide.with(context).load(model.getMealThumb()).into(holder.image);
 
-        if (added) {
-            holder.itemView.setOnClickListener(v -> showDialog(model));
-        }
+        holder.itemView.setOnClickListener(v -> {
+            if (
+                    model.getMeal().equals("Spicy Arrabiata Penne") ||
+                    model.getMeal().equals("Brown Stew Chicken") ||
+                    model.getMeal().equals("Chicken & mushroom Hotpot") ||
+                    model.getMeal().equals("Chicken Alfredo Primavera")
+            ) {
+                showDialog(model);
+            }
+        });
 
     }
 
@@ -95,6 +102,26 @@ public class SavedAdapter extends RecyclerView.Adapter<SavedAdapter.SavedVH> imp
             text = text + "\n9- " + model.getIngredient9();
         if (!model.getIngredient10().isEmpty() )
             text = text + "\n10- " + model.getIngredient10();
+        if (!model.getIngredient11().isEmpty() )
+            text = text + "\n11- " + model.getIngredient11();
+        if (!model.getIngredient12().isEmpty() )
+            text = text + "\n12- " + model.getIngredient12();
+        if (!model.getIngredient13().isEmpty() )
+            text = text + "\n13- " + model.getIngredient13();
+        if (!model.getIngredient14().isEmpty() )
+            text = text + "\n14- " + model.getIngredient14();
+        if (!model.getIngredient15().isEmpty() )
+            text = text + "\n15- " + model.getIngredient15();
+        if (!model.getIngredient16().isEmpty() )
+            text = text + "\n16- " + model.getIngredient16();
+        if (!model.getIngredient17().isEmpty() )
+            text = text + "\n17- " + model.getIngredient17();
+        if (!model.getIngredient18().isEmpty() )
+            text = text + "\n18- " + model.getIngredient18();
+        if (!model.getIngredient19().isEmpty() )
+            text = text + "\n19- " + model.getIngredient19();
+        if (!model.getIngredient20().isEmpty() )
+            text = text + "\n20- " + model.getIngredient20();
 
         textView.setText(text);
 
